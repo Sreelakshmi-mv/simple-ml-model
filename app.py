@@ -16,5 +16,5 @@ def predict():
     return jsonify({"prediction": int(prediction)})
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))   # Render uses PORT
+    port = int(os.environ.get("PORT", 10000))  # Render port
     app.run(host="0.0.0.0", port=port)
